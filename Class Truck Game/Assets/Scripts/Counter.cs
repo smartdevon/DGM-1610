@@ -15,9 +15,10 @@ public class Counter : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D()
     {
         coinCount++;
         counterText.text = coinCount.ToString();
+        gameObject.SetActive(false);
     }
 }
