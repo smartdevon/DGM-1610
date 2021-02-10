@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class Counter : MonoBehaviour
 {
-    public int coinCount;
+    public int coinValue = 2;
+    public IntData coinCount;
     public Text counterText;
 
     // Start is called before the first frame update
@@ -17,8 +18,8 @@ public class Counter : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter2D()
     {
-        coinCount++;
-        counterText.text = coinCount.ToString();
+        coinCount.value += coinValue;
+        counterText.text = coinCount.value.ToString();
         gameObject.SetActive(false);
     }
 }
