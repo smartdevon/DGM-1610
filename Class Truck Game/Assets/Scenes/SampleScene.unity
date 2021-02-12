@@ -874,7 +874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac401d70e1a8f604685f1656abe1a73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCount: 0
+  coinValue: 2
+  coinCount: {fileID: 11400000, guid: 077756b92a80d09459cc46c22c65b9bd, type: 2}
   counterText: {fileID: 901647627}
 --- !u!58 &886277122
 CircleCollider2D:
@@ -1161,7 +1162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac401d70e1a8f604685f1656abe1a73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCount: 0
+  coinValue: 2
+  coinCount: {fileID: 11400000, guid: 077756b92a80d09459cc46c22c65b9bd, type: 2}
   counterText: {fileID: 901647627}
 --- !u!212 &1117384631
 SpriteRenderer:
@@ -1406,7 +1408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac401d70e1a8f604685f1656abe1a73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCount: 0
+  coinValue: 2
+  coinCount: {fileID: 11400000, guid: 077756b92a80d09459cc46c22c65b9bd, type: 2}
   counterText: {fileID: 901647627}
 --- !u!212 &1286746163
 SpriteRenderer:
@@ -1749,7 +1752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac401d70e1a8f604685f1656abe1a73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCount: 0
+  coinValue: 2
+  coinCount: {fileID: 11400000, guid: 077756b92a80d09459cc46c22c65b9bd, type: 2}
   counterText: {fileID: 901647627}
 --- !u!212 &1699129726
 SpriteRenderer:
