@@ -1,0 +1,6 @@
+King;Good day to you Madam!;0;R
+Magician;Hello There! What brings you here this fine day?;0;L
+King;I have come in search of heroes who will help me slay the dragon.;1;R
+Player;Restart:line,0;Continue:line,4
+King;This is a test;2;L
+Magician;Oh boy, I can't wait!;2;R
