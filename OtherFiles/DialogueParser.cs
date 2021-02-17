@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 
 public class DialogueParser : MonoBehaviour
 {
-struct DialogueLine
+    struct DialogueLine
     {
         public string name;
         public string content;
@@ -41,7 +41,7 @@ struct DialogueLine
         lines = new List<DialogueLine>();
 
         LoadDialogue(file);
-        
+
     }
 
     // Update is called once per frame
@@ -123,4 +123,5 @@ struct DialogueLine
             }
             return new string[0];
         }
+    }
 }
