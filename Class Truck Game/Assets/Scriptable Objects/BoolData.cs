@@ -4,7 +4,7 @@ using UnityEngine;
 
 [CreateAssetMenu]
 
-public class IntData : ScriptableObject
+public class BoolData : ScriptableObject
 {
-    public int value;
+        public bool value;
 }
