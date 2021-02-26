@@ -2,7 +2,7 @@ using UnityEngine;
 
 [CreateAssetMenu]
 
-public class Weapon : Scriptableobject
+public class Weapon : ScriptableObject
 {
     public int powerLevel;
 }
