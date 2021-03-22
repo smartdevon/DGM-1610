@@ -7,12 +7,8 @@ public class PlayerControllerX : MonoBehaviour
     public float speed;
     public float rotationSpeed;
     public float verticalInput;
-    public float gravity = -8f, jumpForce = 10f;
-    public float movement;
 
-    private float yDirection;
-    private CharacterController controller;
-    private Vector3 rotation;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,25 +29,4 @@ public class PlayerControllerX : MonoBehaviour
         transform.Rotate(Vector3.right * verticalInput * rotationSpeed * Time.deltaTime);
     }
 
-    void Update()
-    {
-        movement.Set(speed * verticalInput.GetAxis("Vertical"), yDirection, 0);
-
-        yDirection += gravity * Time.deltaTime;
-
-        if (controller.isGrounded && movement.y < 0)
-        {
-            ydirection = -1f;
-        }
-
-        if(Input.GetButtonDown("Jump"))
-        {
-            yDirection = jumpForce;
-        }
-        rotationSpeed.y = verticalInput.GetAxis("Horizontal");
-        transform.Rotate(rotation);
-        movement = transform.TransformDirection(movement);
-        controler.Move(movement * Time.deltaTime);
-
-    }
 }
