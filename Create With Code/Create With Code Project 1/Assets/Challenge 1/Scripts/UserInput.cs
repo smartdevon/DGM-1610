@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 
 public class UserInput : MonoBehaviour
 {
@@ -20,7 +19,7 @@ public class UserInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement.Set(speed * UserInput.GetAxis("Vertical"), yDirection, 0);
+        movement.Set(speed * Input.GetAxis("Vertical"), yDirection, 0);
 
         yDirection += gravity * Time.deltaTime;
 
@@ -29,12 +28,12 @@ public class UserInput : MonoBehaviour
             yDirection = -1f;
         }
 
-        if (UserInput.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
             yDirection = jumpForce;
         }
 
-        rotation.y = UserInput.GetAxis("Horizontal");
+        rotation.y = Input.GetAxis("Horizontal");
         transform.Rotate(rotation);
         movement = transform.TransformDirection(movement);
         controller.Move(movement * Time.deltaTime);
