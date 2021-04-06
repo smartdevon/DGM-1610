@@ -34,5 +34,7 @@ public class FarmerController : MonoBehaviour
         {
         Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+       
     }
 }
