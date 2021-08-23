@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
 
     private Rigidbody playerRb;
-    public float jumpForce;
     public float gravityModifier;
     public float horizontalInput;
     public float verticalInput;
@@ -30,13 +29,6 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
         //Vertical Player Movement
-
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
-        {
-            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
-        }
-        //Jumping
        
     }
     private void OnCollisionEnter(Collision collision)
